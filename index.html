@@ -8,7 +8,15 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-royal-blue fixed-top">
+    <!-- Header -->
+    <header class="bg-royal-blue py-3">
+        <div class="container">
+            <h1 class="text-white text-center">My Portfolio</h1>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-royal-blue sticky-top">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +30,7 @@
                     <a class="nav-link" href="#about">Who We Are</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -31,14 +39,17 @@
         </div>
     </nav>
 
+    <!-- Home Section -->
     <section id="home" class="hero-section">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
             <p>Discover my projects and get to know me better.</p>
+        </div>
     </section>
 
-    <div class="container mt-5">
-        <section id="about" class="my-5">
+    <!-- About Section -->
+    <section id="about" class="my-5">
+        <div class="container">
             <h2>Who We Are</h2>
             <div class="row">
                 <div class="col-md-4">
@@ -48,9 +59,12 @@
                     <p>Welcome! I am a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks like Bootstrap. I love learning new technologies and improving my skills. In my free time, I enjoy contributing to open-source projects and participating in coding challenges.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="my-5">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="my-5">
+        <div class="container">
             <h2>Portfolio</h2>
             <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -85,9 +99,12 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="my-5">
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+        <div class="container">
             <h2>Contact</h2>
             <form>
                 <div class="form-group">
@@ -104,10 +121,11 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <footer class="bg-royal-blue">
+    <!-- Footer -->
+    <footer class="bg-royal-blue text-white text-center py-3">
         &copy; 2024 My Personal Portfolio
     </footer>
 
