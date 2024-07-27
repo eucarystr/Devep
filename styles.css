@@ -97,6 +97,8 @@ header h1 {
 
 .accordion .card {
     border: none;
+    border-bottom: 1px solid #fff; /* White divisory line between sections */
+}
 }
 
 .accordion .card-header {
