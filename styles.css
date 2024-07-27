@@ -48,7 +48,7 @@ header h1 {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 120px 0; /* Increased padding for a larger hero section */
+    padding: 150px 0; /* Increased padding for a larger hero section */
 }
 
 .hero-section h2 {
@@ -90,7 +90,7 @@ header h1 {
 
 .accordion {
     margin: 0 auto; /* Centering the accordion */
-    max-width: 900px; /* Max width for better readability */
+    max-width: 1000px; /* Max width for better readability */
 }
 
 .accordion .card {
