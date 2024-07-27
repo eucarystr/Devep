@@ -250,3 +250,18 @@ footer {
 .btn-dark:hover {
     background-color: #333;
 }
+
+/* Ensure the form takes full width within columns */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+select[multiple] {
+    height: auto; /* Adjust height if needed */
+}
+
+/* Center the button within the form */
+button[type="submit"] {
+    display: block;
+    margin: 20px auto 0; /* Center horizontally */
+}
