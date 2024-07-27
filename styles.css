@@ -164,3 +164,49 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+
+/* Accordion Section */
+#accordion-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+}
+
+#accordion-section h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.accordion .card {
+    background-color: #000;
+    border: none;
+}
+
+.accordion .card-header {
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+}
+
+.accordion .card-header .btn-link {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.accordion .card-header .btn-link:hover,
+.accordion .card-header .btn-link:focus {
+    text-decoration: none;
+}
+
+.accordion .card-body {
+    background-color: #000;
+    color: #fff;
+}
+
+.accordion .float-right {
+    font-size: 1.5rem;
+}
