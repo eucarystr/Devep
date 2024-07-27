@@ -221,15 +221,15 @@ footer {
 }
 
 .form-control {
-    background-color: #333; /* Dark background for form fields */
+    background-color: black; /* Dark background for form fields */
     color: #fff; /* White text color for readability */
-    border: 1px solid #444; /* Slightly lighter border color */
+    border: 1px solid white; /* Slightly lighter border color */
     border-radius: 5px;
     padding: 10px;
 }
 
 .form-control::placeholder {
-    color: #aaa; /* Placeholder text color */
+    color: white /* Placeholder text color */
 }
 
 .btn-dark {
