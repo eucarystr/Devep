@@ -4,31 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding-top: 56px; 
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-        .carousel-item img {
-            height: 400px;
-            object-fit: cover;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-royal-blue fixed-top">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,10 +16,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#about">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -48,21 +31,27 @@
         </div>
     </nav>
 
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my projects and get to know me better.</p>
+    </section>
+
     <div class="container mt-5">
         <section id="about" class="my-5">
+            <h2>Who We Are</h2>
             <div class="row">
                 <div class="col-md-4">
                     <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Profile Picture">
                 </div>
                 <div class="col-md-8">
-                    <h2>About Me</h2>
                     <p>Welcome! I am a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks like Bootstrap. I love learning new technologies and improving my skills. In my free time, I enjoy contributing to open-source projects and participating in coding challenges.</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="my-5">
-            <h2>Projects</h2>
+            <h2>Portfolio</h2>
             <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -118,11 +107,10 @@
         </section>
     </div>
 
-    <footer>
+    <footer class="bg-royal-blue">
         &copy; 2024 My Personal Portfolio
     </footer>
 
-   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
