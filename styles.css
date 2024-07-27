@@ -86,12 +86,14 @@ header h1 {
 /* Portfolio Section */
 #portfolio {
     padding: 60px 0;
+    background-color: #000;
 }
 
 #portfolio h2 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 30px;
+    color: #fff;
 }
 
 .card {
