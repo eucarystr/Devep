@@ -205,3 +205,39 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #000; /* Background color for the contact section */
+    color: #fff; /* Text color for the contact section */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background-color: #333; /* Dark background for form fields */
+    color: #fff; /* White text color for readability */
+    border: 1px solid #444; /* Slightly lighter border color */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
