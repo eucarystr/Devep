@@ -6,17 +6,18 @@
     <title>Personal Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-royal-blue py-3">
+    <header class="bg-primary text-white py-3">
         <div class="container">
-            <h1 class="text-white text-center">My Portfolio</h1>
+            <h1 class="text-center">My Portfolio</h1>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-royal-blue sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,10 +28,13 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Who We Are</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -40,8 +44,8 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container text-center">
             <h1>Welcome to My Portfolio</h1>
             <p>Discover my projects and get to know me better.</p>
         </div>
@@ -50,8 +54,8 @@
     <!-- About Section -->
     <section id="about" class="my-5">
         <div class="container">
-            <h2>Who We Are</h2>
-            <div class="row">
+            <h2 class="text-center">Who We Are</h2>
+            <div class="row mt-4">
                 <div class="col-md-4">
                     <img src="images/me.png" class="img-fluid rounded-circle" alt="Profile Picture">
                 </div>
@@ -65,39 +69,95 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="my-5">
         <div class="container">
-            <h2>Portfolio</h2>
-            <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/weather.jpg" class="d-block w-100" alt="Project 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Weather App</h5>
-                            <p>A web application that provides real-time weather information for any city. Built using HTML, CSS, and JavaScript, with data from the OpenWeatherMap API.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/manager.jpg" class="d-block w-100" alt="Project 2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Task Manager</h5>
-                            <p>An application to manage your daily tasks efficiently. Features include task creation, deletion, and marking tasks as completed. Built with React.js and Firebase for real-time data synchronization.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/blog.jpg" class="d-block w-100" alt="Project 3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Personal Blog</h5>
-                            <p>A personal blogging platform where users can create, edit, and delete posts. Built with Node.js, Express, and MongoDB for the backend, and EJS templates for the frontend.</p>
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/weather.jpg" class="card-img-top" alt="Weather App">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">A web application that provides real-time weather information for any city. Built using HTML, CSS, and JavaScript, with data from the OpenWeatherMap API.</p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/manager.jpg" class="card-img-top" alt="Task Manager">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Manager</h5>
+                            <p class="card-text">An application to manage your daily tasks efficiently. Features include task creation, deletion, and marking tasks as completed. Built with React.js and Firebase for real-time data synchronization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/blog.jpg" class="card-img-top" alt="Personal Blog">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Blog</h5>
+                            <p class="card-text">A personal blogging platform where users can create, edit, and delete posts. Built with Node.js, Express, and MongoDB for the backend, and EJS templates for the frontend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="my-5 bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">What Our Customers Say</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Amazing work! The project was delivered on time and exceeded my expectations."</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>John Doe</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Highly professional and great attention to detail. Highly recommended."</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Jane Smith</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Fantastic experience from start to finish. Will definitely work with them again."</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span>Emily Johnson</span>
+                                <span class="text-warning">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -105,8 +165,8 @@
     <!-- Contact Section -->
     <section id="contact" class="my-5">
         <div class="container">
-            <h2>Contact</h2>
-            <form>
+            <h2 class="text-center">Contact</h2>
+            <form class="mt-4">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -125,7 +185,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-royal-blue text-white text-center py-3">
+    <footer class="bg-primary text-white text-center py-3">
         &copy; 2024 My Personal Portfolio
     </footer>
 
