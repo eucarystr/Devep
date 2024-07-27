@@ -87,12 +87,13 @@ header h1 {
 .accordion-section {
     padding: 60px 15px; /* Added left and right padding */
     background-color: #000;
+    border-bottom: 1px solid #fff; /* White divisory line between sections */
 }
 
 .accordion {
     margin: 0 auto; /* Centering the accordion */
     max-width: 1100px; /* Max width for better readability */
-    border-bottom: 1px solid #fff; /* White divisory line between sections */
+   
     
 }
 
