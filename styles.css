@@ -114,6 +114,7 @@ header h1 {
     font-size: 1.25rem;
     font-weight: bold;
     text-align: left;
+    border-bottom: 1px solid #fff;
 }
 
 .accordion .btn-link:hover {
