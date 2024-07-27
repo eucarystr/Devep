@@ -92,14 +92,15 @@ header h1 {
 .accordion {
     margin: 0 auto; /* Centering the accordion */
     max-width: 1100px; /* Max width for better readability */
+    border-bottom: 1px solid #fff; /* White divisory line between sections */
     
 }
 
 .accordion .card {
     border: none;
-    border-bottom: 1px solid #fff; /* White divisory line between sections */
+    
 }
-}
+
 
 .accordion .card-header {
     background-color: #000;
