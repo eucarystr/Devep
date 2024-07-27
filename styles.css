@@ -87,7 +87,7 @@ header h1 {
 .accordion-section {
     padding: 60px 15px; /* Added left and right padding */
     background-color: #000;
-    border-bottom: 1px solid #fff; /* White divisory line between sections */
+    
 }
 
 .accordion {
@@ -99,7 +99,7 @@ header h1 {
 
 .accordion .card {
     border: none;
-    
+    margin-bottom: 1rem; /* Space between cards for the divider */
 }
 
 
@@ -124,6 +124,15 @@ header h1 {
     background-color: black;
     color: white;
     font-size: 1rem;
+}
+
+.accordion .card + .card::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: white;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
 }
 
 /* Portfolio Section */
