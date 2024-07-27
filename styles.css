@@ -20,7 +20,7 @@ body {
     font-size: 1.2rem;
 }
 
-.bg-royal-blue {
+.bg-primary {
     background-color: #4169e1 !important;
 }
 
@@ -28,12 +28,13 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .carousel-item img {
     height: 400px;
     object-fit: cover;
+}
+
+.card {
+    margin-bottom: 30px;
 }
