@@ -252,12 +252,18 @@ footer {
 }
 
 /* Ensure the form takes full width within columns */
+/* Ensure the form takes full width within columns */
 .form-group {
     margin-bottom: 1.5rem;
 }
 
-select[multiple] {
-    height: auto; /* Adjust height if needed */
+.form-check {
+    margin-bottom: 0.5rem; /* Space between checkboxes */
+}
+
+/* Adjust height for textarea if needed */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing */
 }
 
 /* Center the button within the form */
