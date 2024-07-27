@@ -86,11 +86,13 @@ header h1 {
 /* Accordion Section */
 .accordion-section {
     padding: 60px 15px; /* Added left and right padding */
+    background-color: #000;
 }
 
 .accordion {
     margin: 0 auto; /* Centering the accordion */
     max-width: 1100px; /* Max width for better readability */
+    
 }
 
 .accordion .card {
