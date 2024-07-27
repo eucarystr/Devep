@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="bg-black text-white py-2">
-        
+    <header>
+        <h1></h1>
     </header>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,16 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -41,131 +33,128 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero-section d-flex align-items-center">
-        <div class="container text-center">
-            <h2>WELCOME TO MY PORTFOLIO</h2>
-            <p>Explore my work and get to know me. Here you'll find a showcase of my projects and the skills I bring to the table.</p>
-            <a href="#portfolio" class="btn btn-light btn-lg">Explore My Work</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="my-5">
+    <div class="hero-section">
         <div class="container">
-            <h2 class="text-center text-uppercase">Who We Are</h2>
-            <div class="row mt-4">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Discover my work, skills, and experiences in the world of web development.</p>
+            <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <section id="about" class="my-5">
+            <div class="row">
                 <div class="col-md-4">
-                    <img src="images/me.png" class="img-fluid rounded-circle" alt="Profile Picture">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Profile Picture">
                 </div>
                 <div class="col-md-8">
+                    <h2>About Me</h2>
                     <p>Welcome! I am a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks like Bootstrap. I love learning new technologies and improving my skills. In my free time, I enjoy contributing to open-source projects and participating in coding challenges.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="my-5">
-        <div class="container">
-            <h2 class="text-center text-uppercase">Portfolio</h2>
-            <div class="row mt-4">
+        <div class="accordion-section my-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Our Passion
+                                <span class="float-right">&#61;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We are passionate about building exceptional digital experiences that help our clients stand out and achieve their goals.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Our Mission
+                                <span class="float-right">&#61;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Our mission is to deliver innovative web solutions that are both aesthetically pleasing and highly functional.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Our Profession
+                                <span class="float-right">&#61;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We specialize in creating bespoke websites that align perfectly with our clients' brand and objectives.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Our Vocation
+                                <span class="float-right">&#61;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Our vocation is to continuously innovate and adapt to new technologies to offer the best solutions in web development.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="portfolio" class="my-5">
+            <h2>Portfolio</h2>
+            <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/weather.jpg" class="card-img-top" alt="Weather App">
+                        <img src="images/weather.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <h5 class="card-title text-uppercase">Weather App</h5>
+                            <h5 class="card-title">Weather App</h5>
                             <p class="card-text">A web application that provides real-time weather information for any city. Built using HTML, CSS, and JavaScript, with data from the OpenWeatherMap API.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/manager.jpg" class="card-img-top" alt="Task Manager">
+                        <img src="images/manager.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
-                            <h5 class="card-title text-uppercase">Task Manager</h5>
+                            <h5 class="card-title">Task Manager</h5>
                             <p class="card-text">An application to manage your daily tasks efficiently. Features include task creation, deletion, and marking tasks as completed. Built with React.js and Firebase for real-time data synchronization.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="images/blog.jpg" class="card-img-top" alt="Personal Blog">
+                        <img src="images/blog.jpg" class="card-img-top" alt="Project 3">
                         <div class="card-body">
-                            <h5 class="card-title text-uppercase">Personal Blog</h5>
+                            <h5 class="card-title">Personal Blog</h5>
                             <p class="card-text">A personal blogging platform where users can create, edit, and delete posts. Built with Node.js, Express, and MongoDB for the backend, and EJS templates for the frontend.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="my-5 bg-light py-5">
-        <div class="container">
-            <h2 class="text-center text-uppercase">What Our Customers Say</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Amazing work! The project was delivered on time and exceeded my expectations."</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span>John Doe</span>
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Highly professional and great attention to detail. Highly recommended."</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span>Jane Smith</span>
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">"Fantastic experience from start to finish. Will definitely work with them again."</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span>Emily Johnson</span>
-                                <span class="text-warning">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="my-5">
-        <div class="container">
-            <h2 class="text-center text-uppercase">Contact</h2>
-            <form class="mt-4">
+        <section id="contact" class="my-5">
+            <h2>Contact</h2>
+            <form>
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -180,14 +169,16 @@
                 </div>
                 <button type="submit" class="btn btn-dark">Submit</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-black text-white text-center py-3">
+    <footer>
         &copy; 2024 My Personal Portfolio
     </footer>
 
+    <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
