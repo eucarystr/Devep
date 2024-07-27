@@ -48,21 +48,21 @@ header h1 {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 0; /* Increased padding for a larger hero section */
 }
 
 .hero-section h2 {
-    font-size: 3rem;
+    font-size: 3.5rem; /* Increased font size */
     margin-bottom: 20px;
 }
 
 .hero-section p {
-    font-size: 1.25rem;
+    font-size: 1.5rem; /* Increased font size */
     margin-bottom: 30px;
 }
 
 .hero-section .btn {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger button text */
     padding: 10px 30px;
     border-radius: 50px;
 }
@@ -81,6 +81,43 @@ header h1 {
 #about img {
     border: 5px solid #000;
     margin-bottom: 20px;
+}
+
+/* Accordion Section */
+.accordion-section {
+    padding: 60px 15px; /* Added left and right padding */
+}
+
+.accordion {
+    margin: 0 auto; /* Centering the accordion */
+    max-width: 800px; /* Max width for better readability */
+}
+
+.accordion .card {
+    border: none;
+}
+
+.accordion .card-header {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.accordion .btn-link {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.accordion .btn-link:hover {
+    color: #ddd;
+}
+
+.accordion .card-body {
+    background-color: #f9f9f9;
+    color: #000;
+    font-size: 1rem;
 }
 
 /* Portfolio Section */
@@ -137,6 +174,8 @@ header h1 {
 /* Contact Section */
 #contact {
     padding: 60px 0;
+    background-color: #000; /* Changed background color to black */
+    color: #fff; /* Changed text color to white */
 }
 
 #contact h2 {
@@ -165,41 +204,4 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-
-
-
-
-
-
-/* Accordion Section */
-.accordion-section {
-    padding: 60px 0;
-}
-
-.accordion .card {
-    border: none;
-}
-
-.accordion .card-header {
-    background-color: #000;
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-
-.accordion .btn-link {
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-align: left;
-}
-
-.accordion .btn-link:hover {
-    color: #ddd;
-}
-
-.accordion .card-body {
-    background-color: #f9f9f9;
-    color: #000;
-    font-size: 1rem;
 }
