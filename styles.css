@@ -127,14 +127,7 @@ header h1 {
     font-size: 1rem;
 }
 
-.accordion .card + .card::before {
-    content: '';
-    display: block;
-    height: 1px;
-    background-color: white;
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-}
+
 
 /* Portfolio Section */
 #portfolio {
