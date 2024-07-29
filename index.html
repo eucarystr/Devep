@@ -238,7 +238,13 @@
     <section id="contact" class="my-5">
         <div class="container">
             <h2 class="text-center text-uppercase">Contact</h2>
-            <form class="mt-4">
+            
+            <!-- Success Message -->
+            <div id="success-message" class="alert alert-success d-none" role="alert">
+                Your message has been sent successfully!
+            </div>
+            
+            <form class="mt-4" id="contact-form">
                 <div class="row">
                     <!-- Left Column -->
                     <div class="col-md-6">
@@ -294,8 +300,19 @@
             </form>
         </div>
     </section>
-    
-    
+
+    <!-- JavaScript -->
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Display the success message
+        document.getElementById('success-message').classList.remove('d-none');
+        
+        // Optionally, clear the form fields
+        document.getElementById('contact-form').reset();
+    });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-black text-white text-center py-3">
