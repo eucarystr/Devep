@@ -234,107 +234,331 @@
         </div>
     </section>
 
-   <!-- Contact Section -->
-<section id="contact" class="my-5">
-    <div class="container">
-        <h2 class="text-center text-uppercase">Contact</h2>
-        
-        <!-- Success Message -->
-        <div id="success-message" class="alert alert-success d-none" role="alert">
-            Your message has been sent successfully!
-        </div>
-        
-        <!-- Contact Form -->
-        <form class="mt-4" id="contact-form">
-            <div class="row">
-                <!-- Left Column -->
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-black text-white py-2">
+            <div class="container">
+                <h1 class="text-center"></h1>
+            </div>
+        </header>
+    
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+            <a class="navbar-brand" href="#">TATIS DEVELOPMENT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Home Section -->
+        <section id="home" class="hero-section d-flex align-items-center">
+            <div class="container text-center">
+                <h2>UNVEILING CREATIVITY & CODE</h2>
+                <p>Discover My Projects and Skills</p>
+                <a href="#portfolio" class="btn btn-light btn-lg">EXPLORE MY WORK</a>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about" class="my-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase">About Me</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/me.png" class="img-fluid rounded-circle" alt="Profile Picture">
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                    <div class="col-md-8">
+                        <p>Welcome! I am a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks like Bootstrap. Additionally, I am proficient in modern JavaScript frameworks and libraries such as React, as well as backend technologies like Ruby on Rails, Node.js, and Express. I love learning new technologies and improving my skills. </p>
+                        <br>
+                        <h2 class="text-center text-uppercase">What We Do</h2>
+                        <p>At my core, I specialize in building exceptional digital experiences tailored to meet the unique needs of my clients. I am adept at creating custom websites that are not only visually stunning but also highly functional and user-friendly. I leverage the latest technologies, including React for dynamic user interfaces, and Ruby on Rails or Node.js with Express for robust backend solutions, ensuring my projects are scalable and maintainable.</p>
+                        <br>
+                        <p>Beyond web development, I offer a comprehensive suite of services designed to enhance your online presence. From search engine optimization (SEO) to pay-per-click (PPC) advertising and social media management, I am dedicated to driving traffic and engagement to your digital platforms. My mission is to deliver innovative web solutions and strategic marketing services that help my clients stand out in an increasingly competitive online landscape. </p>
+                </div>
+            </div>
+        </section>
+       <!-- Accordeon Section -->
+        <div class="accordion-section my-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                MY PASSION
+                                <span class="float-right">&#43;</span>
+                            </button>
+                        </h2>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We are deeply passionate about building exceptional digital experiences that not only captivate and engage users but also help our clients stand out and achieve their goals. Our commitment to quality and innovation drives us to continuously push the boundaries of what is possible, ensuring that every project we undertake delivers tangible value and lasting impact.
+                        </div>
                     </div>
                 </div>
-                <!-- Right Column -->
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label>Services Needed</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="service1" name="services" value="Website Development">
-                            <label class="form-check-label" for="service1">
-                                Website Development
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="service2" name="services" value="SEO">
-                            <label class="form-check-label" for="service2">
-                                SEO
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="service3" name="services" value="PPC">
-                            <label class="form-check-label" for="service3">
-                                PPC
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="service4" name="services" value="Social Media">
-                            <label class="form-check-label" for="service4">
-                                Social Media
-                            </label>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                MY MISSION
+                                <span class="float-right">&#43;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Our mission is to deliver innovative web solutions that are both aesthetically pleasing and highly functional. We strive to combine cutting-edge technology with elegant design to create websites that not only look stunning but also provide a seamless and intuitive user experience. Our goal is to help our clients achieve their business objectives through high-quality digital products that drive engagement and success.
                         </div>
                     </div>
-                    <div class="form-group mt-4">
-                        <label for="project">About Your Project</label>
-                        <textarea class="form-control" id="project" name="project" rows="3" placeholder="Details about your project" required></textarea>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                MY PROFESSION
+                                <span class="float-right">&#43;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            We specialize in creating bespoke websites that align perfectly with our clients' brand and objectives. Our team takes pride in crafting unique, tailor-made digital solutions that reflect the essence of each client's vision. We meticulously ensure that every website we develop is not only visually captivating but also strategically designed to enhance the user experience and achieve specific business goals. From concept to completion, we focus on delivering high-quality, personalized web experiences that set our clients apart in their respective industries.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                MY VOCATION
+                                <span class="float-right">&#43;</span>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Our vocation is to continuously innovate and adapt to new technologies to offer the best solutions in web development. We are committed to staying at the forefront of the ever-evolving digital landscape, constantly exploring and integrating cutting-edge tools and techniques. This dedication ensures that our clients receive the most advanced and effective web solutions available. By embracing innovation and maintaining a forward-thinking approach, we strive to deliver exceptional results that drive success and growth for our clients' businesses.
+                        </div>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
-        </form>
-    </div>
-</section>
-
-<!-- JavaScript for Handling Form Submission -->
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+        </div>
+         
     
-    // Collect form data
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="my-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase">Portfolio</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/weather.jpg" class="card-img-top" alt="Weather App">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Weather App</h5>
+                                <p class="card-text">A web application that provides real-time weather information for any city. Built using HTML, CSS, and JavaScript, with data from the OpenWeatherMap API.</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/manager.jpg" class="card-img-top" alt="Task Manager">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Task Manager</h5>
+                                <p class="card-text">An application to manage your daily tasks efficiently. Features include task creation, deletion, and marking tasks as completed. Built with React.js and Firebase for real-time data synchronization.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/blog.jpg" class="card-img-top" alt="Personal Blog">
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase">Personal Blog</h5>
+                                <p class="card-text">A personal blogging platform where users can create, edit, and delete posts. Built with Node.js, Express, and MongoDB for the backend, and EJS templates for the frontend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-    // Send form data to the server
-    fetch('/submit', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Display success message
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="my-5 bg-light py-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase">What Our Customers Say</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">"Amazing work! The project was delivered on time and exceeded my expectations."</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>John Doe</span>
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">"Highly professional and great attention to detail. Highly recommended."</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>Jane Smith</span>
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">"Fantastic experience from start to finish. Will definitely work with them again."</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>Emily Johnson</span>
+                                    <span class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact" class="my-5">
+            <div class="container">
+                <h2 class="text-center text-uppercase">Contact</h2>
+                
+                <!-- Success Message -->
+                <div id="success-message" class="alert alert-success d-none" role="alert">
+                    Your message has been sent successfully!
+                </div>
+                
+                <form class="mt-4" id="contact-form">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                            </div>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Services Needed</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="service1">
+                                    <label class="form-check-label" for="service1">
+                                        Website Development
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="service2">
+                                    <label class="form-check-label" for="service2">
+                                        SEO
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="service3">
+                                    <label class="form-check-label" for="service3">
+                                        PPC
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="service4">
+                                    <label class="form-check-label" for="service4">
+                                        Social Media
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="project">About Your Project</label>
+                                <textarea class="form-control" id="project" rows="3" placeholder="Details about your project"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- JavaScript Display Success Message in the Contact Form-->
+        <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            
             document.getElementById('success-message').classList.remove('d-none');
-            // Reset form fields
+            
+           
             document.getElementById('contact-form').reset();
-        } else {
-            // Handle error if needed
-            console.error('Error:', data.error);
-        }
-    })
-    .catch(error => console.error('Error:', error));
-});
-</script>
-
+        });
+        </script>
+    
+        <!-- Footer -->
+        <footer class="bg-black text-white text-center py-3">
+            &copy; 2024 Tatis Development | eucaryst@gmail.com
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
 
     <!-- Footer -->
     <footer class="bg-black text-white text-center py-3">
