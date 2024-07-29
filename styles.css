@@ -180,40 +180,6 @@ header h1 {
     font-size: 1.25rem;
 }
 
-/* Contact Section */
-#contact {
-    padding: 60px 0;
-    background-color: #000; /* Changed background color to black */
-    color: #fff; /* Changed text color to white */
-}
-
-#contact h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.form-control {
-    border-radius: 5px;
-}
-
-.btn-dark {
-    background-color: #000;
-    color: #fff;
-    border-radius: 50px;
-}
-
-.btn-dark:hover {
-    background-color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
 
 
 /* Contact Section */
@@ -270,4 +236,8 @@ textarea.form-control {
 button[type="submit"] {
     display: block;
     margin: 20px auto 0; /* Center horizontally */
+}
+
+.container {
+    background-color: #000;
 }
